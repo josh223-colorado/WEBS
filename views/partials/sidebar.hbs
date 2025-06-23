@@ -1,0 +1,48 @@
+<section id="sidebar">
+  <section id="intro">
+    <a href="#" class="logo"><img src="{{sidebar.logo}}" alt="" /></a>
+    <header>
+      <h2>{{sidebar.title}}</h2>
+      <p>{{{sidebar.description}}}</p>
+    </header>
+  </section>
+
+  <section>
+    <div class="mini-posts">
+      {{#each sidebar.miniPosts}}
+        <article class="mini-post">
+          <header>
+            <h3><a href="{{url}}">{{title}}</a></h3>
+            <time class="published" datetime="{{datetime}}">{{date}}</time>
+            <a href="#" class="author"><img src="{{avatar}}" alt="" /></a>
+          </header>
+          <a href="{{url}}" class="image"><img src="{{image}}" alt="" /></a>
+        </article>
+      {{/each}}
+    </div>
+  </section>
+
+  <section>
+    <ul class="posts">
+      {{#each sidebar.recentPosts}}
+        <li>
+          <article>
+            <header>
+              <h3><a href="{{url}}">{{title}}</a></h3>
+              <time class="published" datetime="{{datetime}}">{{date}}</time>
+            </header>
+            <a href="{{url}}" class="image"><img src="{{image}}" alt="" /></a>
+          </article>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section class="blurb">
+    <h2>About</h2>
+    <p>{{sidebar.about}}</p>
+    <ul class="actions">
+      <li><a href="#" class="button">Learn More</a></li>
+    </ul>
+  </section>
+</section>

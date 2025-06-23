@@ -7,17 +7,38 @@ body {
 }
 
 header {
-  background: #2a9d8f;
+  background: linear-gradient(90deg, #ffffff, #cccccc, #888888, #000000);
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 nav a {
-  margin: 0 10px;
   color: white;
+  margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-logo {
+  height: 40px;
+}
+
 
 .hero {
   padding: 2rem;
@@ -32,4 +53,5 @@ button {
   border: none;
   cursor: pointer;
 }
+
 
